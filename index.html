@@ -58,7 +58,7 @@ function init() {
 
 
     let loader = new THREE.GLTFLoader()
-    loader.load('scene.fbx', function(gltf){
+    loader.load('scene.gltf', function(gltf){
         car = gltf.scene.children[0]
         car.scale.set(1, 1, 1)
         scene.add(gltf.scene)
