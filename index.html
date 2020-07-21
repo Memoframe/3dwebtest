@@ -19,16 +19,16 @@ function init() {
 
     camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight,1,5000)
     //camera.rotation.y = 45/180*Math.PI
-    camera.position.x = -70
-    camera.position.y = 80
-    camera.position.z = 30
+    camera.position.x = -10
+    camera.position.y = 10
+    camera.position.z = 10
 
 
 
-    hlight = new THREE.AmbientLight(0x404040, 1)
+    hlight = new THREE.AmbientLight(0x404040, 0.5)
     scene.add(hlight)
 
-    directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+    directionalLight = new THREE.DirectionalLight(0xffffff, 1.8)
     directionalLight.position.set(0,1,0)
     directionalLight.castShadow = true
     scene.add(directionalLight)
