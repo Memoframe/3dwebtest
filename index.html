@@ -17,11 +17,11 @@ function init() {
     scene = new THREE.Scene()
     scene.background = new THREE.Color(0xdddddd)
 
-    camera = new THREE.PerspectiveCamera(15, window.innerWidth/window.innerHeight,1,5000)
+    camera = new THREE.PerspectiveCamera(25, window.innerWidth/window.innerHeight,0.1,50)
     //camera.rotation.y = 45/180*Math.PI
-    camera.position.x = -10
-    camera.position.y = 10
-    camera.position.z = 10
+    camera.position.x = -1
+    camera.position.y = 1
+    camera.position.z = 1
 
 
 
